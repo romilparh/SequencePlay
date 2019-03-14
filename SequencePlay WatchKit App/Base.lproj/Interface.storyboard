@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14460.31" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc" pageOrientation="vertical">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14460.16"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="SequencePlay_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label width="136" height="39" alignment="left" text="Label" id="F2P-st-t80"/>
+                        <separator width="136" alignment="left" id="LQa-qV-gQP">
+                            <color key="color" name="systemGreenColor" catalog="System" colorSpace="catalog"/>
+                        </separator>
+                        <button width="1" alignment="left" title="Easy Mode" id="Ipj-jW-hWQ">
+                            <connections>
+                                <action selector="setEasyMode" destination="AgC-eL-Hgc" id="mMF-pw-il6"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Hard Mode" id="yZB-CE-NOd">
+                            <connections>
+                                <action selector="setHardMode" destination="AgC-eL-Hgc" id="mtd-X0-3W4"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="labelWelcome" destination="F2P-st-t80" id="kYi-pm-ONF"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="36" y="-658"/>
+        </scene>
+        <!--SequencePlay-->
+        <scene sceneID="A9a-nB-Ryp">
+            <objects>
+                <controller identifier="gameController" title="SequencePlay" id="WHx-ik-4cr" customClass="GameInterfaceController" customModule="SequencePlay_WatchKit_Extension">
+                    <items>
+                        <group width="1" height="0.5" alignment="left" id="2Uj-2J-sg5">
+                            <items>
+                                <button width="0.5" height="1" alignment="left" backgroundImage="man" id="g4K-Jt-gEo">
+                                    <connections>
+                                        <action selector="buttonOnePressed" destination="WHx-ik-4cr" id="Kaf-ZD-zx8"/>
+                                    </connections>
+                                </button>
+                                <button width="0.5" height="1" alignment="left" backgroundImage="woman" id="UMm-hM-U1o">
+                                    <connections>
+                                        <action selector="buttonTwoPressed" destination="WHx-ik-4cr" id="ZMz-sP-hlg"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" height="0.5" alignment="left" id="xk1-jO-z5I">
+                            <items>
+                                <button width="0.5" height="1" alignment="left" backgroundImage="pig" id="ezd-Bx-ME5">
+                                    <connections>
+                                        <action selector="buttonThreePressed" destination="WHx-ik-4cr" id="4Rb-S6-Mtp"/>
+                                    </connections>
+                                </button>
+                                <button width="0.5" height="1" alignment="left" backgroundImage="guitar" id="Ltn-0J-jj6">
+                                    <connections>
+                                        <action selector="buttonFourPressed" destination="WHx-ik-4cr" id="4wf-TA-DHY"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="buttonFour" destination="Ltn-0J-jj6" id="8LE-SE-7EO"/>
+                        <outlet property="buttonOne" destination="g4K-Jt-gEo" id="Kgk-Wa-0NU"/>
+                        <outlet property="buttonThree" destination="ezd-Bx-ME5" id="AOl-LO-dJE"/>
+                        <outlet property="buttonTwo" destination="UMm-hM-U1o" id="UQA-PU-I7J"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="323" y="-658"/>
+        </scene>
+    </scenes>
+</document>

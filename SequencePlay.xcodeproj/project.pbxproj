@@ -1,0 +1,630 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1865884C223A91340002B355 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1865884B223A91340002B355 /* AppDelegate.swift */; };
+		1865884E223A91340002B355 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1865884D223A91340002B355 /* ViewController.swift */; };
+		18658851223A91340002B355 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1865884F223A91340002B355 /* Main.storyboard */; };
+		18658853223A91350002B355 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18658852223A91350002B355 /* Assets.xcassets */; };
+		18658856223A91350002B355 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18658854223A91350002B355 /* LaunchScreen.storyboard */; };
+		1865885B223A91350002B355 /* SequencePlay WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 1865885A223A91350002B355 /* SequencePlay WatchKit App.app */; };
+		18658861223A91350002B355 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1865885F223A91350002B355 /* Interface.storyboard */; };
+		18658863223A91360002B355 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18658862223A91360002B355 /* Assets.xcassets */; };
+		1865886A223A91360002B355 /* SequencePlay WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 18658869223A91360002B355 /* SequencePlay WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		1865886F223A91360002B355 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1865886E223A91360002B355 /* InterfaceController.swift */; };
+		18658871223A91360002B355 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18658870223A91360002B355 /* ExtensionDelegate.swift */; };
+		18658873223A91360002B355 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18658872223A91360002B355 /* Assets.xcassets */; };
+		18658883223A940A0002B355 /* GameInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18658882223A940A0002B355 /* GameInterfaceController.swift */; };
+		18658889223A9CB10002B355 /* GameData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18658888223A9CB10002B355 /* GameData.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1865885C223A91350002B355 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18658840223A91340002B355 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18658859223A91350002B355;
+			remoteInfo = "SequencePlay WatchKit App";
+		};
+		1865886B223A91360002B355 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18658840223A91340002B355 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18658868223A91360002B355;
+			remoteInfo = "SequencePlay WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1865887A223A91360002B355 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				1865886A223A91360002B355 /* SequencePlay WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1865887E223A91360002B355 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				1865885B223A91350002B355 /* SequencePlay WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		18658848223A91340002B355 /* SequencePlay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SequencePlay.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1865884B223A91340002B355 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1865884D223A91340002B355 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		18658850223A91340002B355 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		18658852223A91350002B355 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		18658855223A91350002B355 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		18658857223A91350002B355 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1865885A223A91350002B355 /* SequencePlay WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SequencePlay WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		18658860223A91350002B355 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		18658862223A91360002B355 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		18658864223A91360002B355 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18658869223A91360002B355 /* SequencePlay WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "SequencePlay WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1865886E223A91360002B355 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		18658870223A91360002B355 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		18658872223A91360002B355 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		18658874223A91360002B355 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18658882223A940A0002B355 /* GameInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameInterfaceController.swift; sourceTree = "<group>"; };
+		18658888223A9CB10002B355 /* GameData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameData.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18658845223A91340002B355 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18658866223A91360002B355 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1865883F223A91340002B355 = {
+			isa = PBXGroup;
+			children = (
+				1865884A223A91340002B355 /* SequencePlay */,
+				1865885E223A91350002B355 /* SequencePlay WatchKit App */,
+				1865886D223A91360002B355 /* SequencePlay WatchKit Extension */,
+				18658849223A91340002B355 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		18658849223A91340002B355 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18658848223A91340002B355 /* SequencePlay.app */,
+				1865885A223A91350002B355 /* SequencePlay WatchKit App.app */,
+				18658869223A91360002B355 /* SequencePlay WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1865884A223A91340002B355 /* SequencePlay */ = {
+			isa = PBXGroup;
+			children = (
+				1865884B223A91340002B355 /* AppDelegate.swift */,
+				1865884D223A91340002B355 /* ViewController.swift */,
+				1865884F223A91340002B355 /* Main.storyboard */,
+				18658852223A91350002B355 /* Assets.xcassets */,
+				18658854223A91350002B355 /* LaunchScreen.storyboard */,
+				18658857223A91350002B355 /* Info.plist */,
+			);
+			path = SequencePlay;
+			sourceTree = "<group>";
+		};
+		1865885E223A91350002B355 /* SequencePlay WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				1865885F223A91350002B355 /* Interface.storyboard */,
+				18658862223A91360002B355 /* Assets.xcassets */,
+				18658864223A91360002B355 /* Info.plist */,
+			);
+			path = "SequencePlay WatchKit App";
+			sourceTree = "<group>";
+		};
+		1865886D223A91360002B355 /* SequencePlay WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				1865886E223A91360002B355 /* InterfaceController.swift */,
+				18658870223A91360002B355 /* ExtensionDelegate.swift */,
+				18658872223A91360002B355 /* Assets.xcassets */,
+				18658874223A91360002B355 /* Info.plist */,
+				18658882223A940A0002B355 /* GameInterfaceController.swift */,
+				18658888223A9CB10002B355 /* GameData.swift */,
+			);
+			path = "SequencePlay WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		18658847223A91340002B355 /* SequencePlay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1865887F223A91360002B355 /* Build configuration list for PBXNativeTarget "SequencePlay" */;
+			buildPhases = (
+				18658844223A91340002B355 /* Sources */,
+				18658845223A91340002B355 /* Frameworks */,
+				18658846223A91340002B355 /* Resources */,
+				1865887E223A91360002B355 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1865885D223A91350002B355 /* PBXTargetDependency */,
+			);
+			name = SequencePlay;
+			productName = SequencePlay;
+			productReference = 18658848223A91340002B355 /* SequencePlay.app */;
+			productType = "com.apple.product-type.application";
+		};
+		18658859223A91350002B355 /* SequencePlay WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1865887B223A91360002B355 /* Build configuration list for PBXNativeTarget "SequencePlay WatchKit App" */;
+			buildPhases = (
+				18658858223A91350002B355 /* Resources */,
+				1865887A223A91360002B355 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1865886C223A91360002B355 /* PBXTargetDependency */,
+			);
+			name = "SequencePlay WatchKit App";
+			productName = "SequencePlay WatchKit App";
+			productReference = 1865885A223A91350002B355 /* SequencePlay WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		18658868223A91360002B355 /* SequencePlay WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18658877223A91360002B355 /* Build configuration list for PBXNativeTarget "SequencePlay WatchKit Extension" */;
+			buildPhases = (
+				18658865223A91360002B355 /* Sources */,
+				18658866223A91360002B355 /* Frameworks */,
+				18658867223A91360002B355 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SequencePlay WatchKit Extension";
+			productName = "SequencePlay WatchKit Extension";
+			productReference = 18658869223A91360002B355 /* SequencePlay WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		18658840223A91340002B355 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Romil Parhwal";
+				TargetAttributes = {
+					18658847223A91340002B355 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					18658859223A91350002B355 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					18658868223A91360002B355 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 18658843223A91340002B355 /* Build configuration list for PBXProject "SequencePlay" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1865883F223A91340002B355;
+			productRefGroup = 18658849223A91340002B355 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				18658847223A91340002B355 /* SequencePlay */,
+				18658859223A91350002B355 /* SequencePlay WatchKit App */,
+				18658868223A91360002B355 /* SequencePlay WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18658846223A91340002B355 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18658856223A91350002B355 /* LaunchScreen.storyboard in Resources */,
+				18658853223A91350002B355 /* Assets.xcassets in Resources */,
+				18658851223A91340002B355 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18658858223A91350002B355 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18658863223A91360002B355 /* Assets.xcassets in Resources */,
+				18658861223A91350002B355 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18658867223A91360002B355 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18658873223A91360002B355 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18658844223A91340002B355 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1865884E223A91340002B355 /* ViewController.swift in Sources */,
+				1865884C223A91340002B355 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18658865223A91360002B355 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18658871223A91360002B355 /* ExtensionDelegate.swift in Sources */,
+				18658889223A9CB10002B355 /* GameData.swift in Sources */,
+				1865886F223A91360002B355 /* InterfaceController.swift in Sources */,
+				18658883223A940A0002B355 /* GameInterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1865885D223A91350002B355 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18658859223A91350002B355 /* SequencePlay WatchKit App */;
+			targetProxy = 1865885C223A91350002B355 /* PBXContainerItemProxy */;
+		};
+		1865886C223A91360002B355 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18658868223A91360002B355 /* SequencePlay WatchKit Extension */;
+			targetProxy = 1865886B223A91360002B355 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1865884F223A91340002B355 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18658850223A91340002B355 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		18658854223A91350002B355 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18658855223A91350002B355 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		1865885F223A91350002B355 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18658860223A91350002B355 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		18658875223A91360002B355 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		18658876223A91360002B355 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		18658878223A91360002B355 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3BAK9GKWK3;
+				INFOPLIST_FILE = "SequencePlay WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.romilparh.SequencePlay.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Debug;
+		};
+		18658879223A91360002B355 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3BAK9GKWK3;
+				INFOPLIST_FILE = "SequencePlay WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.romilparh.SequencePlay.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Release;
+		};
+		1865887C223A91360002B355 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3BAK9GKWK3;
+				IBSC_MODULE = SequencePlay_WatchKit_Extension;
+				INFOPLIST_FILE = "SequencePlay WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.romilparh.SequencePlay.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Debug;
+		};
+		1865887D223A91360002B355 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3BAK9GKWK3;
+				IBSC_MODULE = SequencePlay_WatchKit_Extension;
+				INFOPLIST_FILE = "SequencePlay WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.romilparh.SequencePlay.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Release;
+		};
+		18658880223A91360002B355 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3BAK9GKWK3;
+				INFOPLIST_FILE = SequencePlay/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.romilparh.SequencePlay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		18658881223A91360002B355 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3BAK9GKWK3;
+				INFOPLIST_FILE = SequencePlay/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.romilparh.SequencePlay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18658843223A91340002B355 /* Build configuration list for PBXProject "SequencePlay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18658875223A91360002B355 /* Debug */,
+				18658876223A91360002B355 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18658877223A91360002B355 /* Build configuration list for PBXNativeTarget "SequencePlay WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18658878223A91360002B355 /* Debug */,
+				18658879223A91360002B355 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1865887B223A91360002B355 /* Build configuration list for PBXNativeTarget "SequencePlay WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1865887C223A91360002B355 /* Debug */,
+				1865887D223A91360002B355 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1865887F223A91360002B355 /* Build configuration list for PBXNativeTarget "SequencePlay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18658880223A91360002B355 /* Debug */,
+				18658881223A91360002B355 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 18658840223A91340002B355 /* Project object */;
+}
